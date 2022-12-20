@@ -1,16 +1,16 @@
 # Quick Order
 
-Lector de PDF
+Input que permitirá una compra rápida en el sitio de VTEX IO.
 
 ## Configuration 
 
 ### Paso 1: Clonar Proyecto
 
-Clonar [este](https://github.com/cristhian-fernandez/itgloberspartnercl-quick-order) repositorio en tu computador.
+Clonar [este](https://github.com/cristhian-fernandez/itgloberspartnercl-quick-order/) repositorio en tu computador.
 
 #### Paso 2 : Editar el Manifest.json
 
-Una vez clonado el repositorio se debe configurar el `Manifest.json` partiendo por: 
+Una vez clonado el repositorio debe configurar el `Manifest.json` partiendo por: 
  - vendor
  - name
  - title
@@ -19,10 +19,10 @@ Una vez clonado el repositorio se debe configurar el `Manifest.json` partiendo p
 Ej: 
 
     "vendor": "itgloberspartnercl",
-    "name": "pdf-reader",
-    "version": "0.0.1",
-    "title": "Lector de PDF",
-    "description": "Lector de PDF",
+     "name": "quick-order",
+     "version": "0.0.1",
+     "title": "Compra rápida",
+     "description": "Input que permitirá una compra rapida en mi sitio VTEX IO",
 
 De igual manera debe configurar los archivos `package.json` con su `name` y `versión`
 
@@ -36,7 +36,9 @@ Comprobar que el proyecto cuenta con todas las builders y dependencias necesaria
     },  
 
     "dependencies": {
-        "vtex.css-handles": "0.x"
+       "vtex.checkout-graphql": "0.x",
+       "vtex.search-graphql": "0.x",
+       "vtex.css-handles": "0.x"
     },
 
 ### Paso 3: Instalar node-modules
@@ -56,7 +58,7 @@ Para usar esta app custom en su tienda base es importante importarla en su proye
 Ej: vendor.name: version
   
     "dependencies": {
-      "itgloberspartnercl.pdf-reader": "0.x"
+      "itgloberspartnercl.quick-order": "0.x"
      },
 
 
